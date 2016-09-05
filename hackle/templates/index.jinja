@@ -1,0 +1,13 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+  <form method="post" action="{{ url('add-user') }}">
+    <div>
+      <label form="email">Email:</label>
+      <input id="email" type="email" name="email">
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+{% endblock %}
